@@ -6,12 +6,12 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { TableComponent } from './components/table/table.component';
 import { ChartComponent } from './components/chart/chart.component';
-import { NgApexchartsModule } from 'ng-apexcharts';
 import { QRCodeModule } from 'angularx-qrcode';
+import { EchartsxModule } from 'echarts-for-angular';
 
 @NgModule({
   declarations: [AppComponent, CardComponent, TableComponent, ChartComponent],
-  imports: [BrowserModule, AppRoutingModule, NgApexchartsModule, QRCodeModule],
+  imports: [BrowserModule, AppRoutingModule, EchartsxModule, QRCodeModule],
   providers: [],
   bootstrap: [AppComponent],
 })

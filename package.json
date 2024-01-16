@@ -20,6 +20,8 @@
     "@angular/router": "^17.0.0",
     "angularx-qrcode": "^17.0.0",
     "apexcharts": "^3.45.1",
+    "echarts": "^5.4.3",
+    "echarts-for-angular": "^0.4.0",
     "ng-apexcharts": "^1.8.0",
     "primeng": "^17.3.2",
     "rxjs": "~7.8.0",
