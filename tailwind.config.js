@@ -2,7 +2,16 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      container: {
+        screens: {
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px", // Change the maxWidth for xl to 1280px
+        },
+      },
+    },
     fontFamily: {
       english: ["Inter", "sans-serif"],
       arabic: ["Neo Sans Arabic", "sans-serif"],
