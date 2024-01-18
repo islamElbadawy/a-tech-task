@@ -10,7 +10,6 @@ import { ChartComponent } from './components/chart/chart.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { EchartsxModule } from 'echarts-for-angular';
 import { TooltipModule } from 'primeng/tooltip';
-import { ClipboardModule } from 'ngx-clipboard';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
