@@ -114,7 +114,7 @@ export class ChartComponent {
               colorStops: [
                 {
                   offset: 0,
-                  color: '#8A74F9 ', // Start color
+                  color: 'rgba(138, 116, 249, 0.26)', // Start color
                 },
                 {
                   offset: 1,
