@@ -1,6 +1,55 @@
-<div
-  class="w-full max-w-[839px] h-[264px]"
-  echarts
-  [options]="echartsOptions"
-  [extentions]="echartsExtentions"
-></div>
+<div class="bg-[#fff] max-w-[839px] py-2 rounded-lg">
+  <div class="flex flex-col gap-4 justify-between py-2 px-10">
+    <div>
+      <h3>Coupon usage statistics</h3>
+      <p class="flex gap-2 items-center text-textLight">
+        05 July , 2023 - 05 August , 2023
+        <span class="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="5"
+            viewBox="0 0 8 5"
+            fill="none"
+          >
+            <path
+              d="M7.21882 0.651932L4.10941 3.67981L1 0.651932"
+              stroke="#92A1AD"
+              stroke-width="1.20977"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </p>
+    </div>
+    <p
+      class="flex gap-2 justify-between items-center w-fit border border-bgColor h-fit p-2 rounded-lg"
+    >
+      yearly
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="8"
+          height="5"
+          viewBox="0 0 8 5"
+          fill="none"
+        >
+          <path
+            d="M7.21882 0.651932L4.10941 3.67981L1 0.651932"
+            stroke="#92A1AD"
+            stroke-width="1.20977"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </p>
+  </div>
+  <div
+    class="w-full h-[264px] bg-white"
+    echarts
+    [options]="echartsOptions"
+    [extentions]="echartsExtentions"
+  ></div>
+</div>
