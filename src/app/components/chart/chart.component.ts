@@ -103,7 +103,7 @@ export class ChartComponent {
           emphasis: {
             focus: 'series',
           },
-          data: [140, 232, 101, 264, 90, 340, 250, 232, 101, 264, 232, 140],
+          data: [140, 32, 101, 64, 90, 140, 50, 32, 101, 64, 132, 40],
           areaStyle: {
             color: {
               type: 'linear',
