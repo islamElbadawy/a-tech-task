@@ -8,10 +8,17 @@ import { TableComponent } from './components/table/table.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { EchartsxModule } from 'echarts-for-angular';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [AppComponent, CardComponent, TableComponent, ChartComponent],
-  imports: [BrowserModule, AppRoutingModule, EchartsxModule, QRCodeModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    EchartsxModule,
+    QRCodeModule,
+    TooltipModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

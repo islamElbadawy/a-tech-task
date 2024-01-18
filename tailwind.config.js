@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       english: ["Inter", "sans-serif"],
       arabic: ["Neo Sans Arabic", "sans-serif"],
+      mont: ["Montserrat", "sans-serif"],
     },
     colors: {
       bgColor: "#F3F5F7",

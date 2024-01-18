@@ -1,0 +1,3 @@
+.code {
+  @apply border-none rounded overflow-hidden;
+}
