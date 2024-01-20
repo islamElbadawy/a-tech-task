@@ -1,0 +1,4 @@
+::ng-deep .p-datatable-thead {
+  padding: 0.5rem; /* Use the desired padding value instead of p-2 */
+  background-color: white;
+}

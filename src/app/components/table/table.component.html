@@ -1,1 +1,95 @@
-<p>table works!</p>
+<div>
+    <div>
+        Table Header
+    </div>
+
+    <div>
+        <p-table #dt1 [value]="customers" dataKey="id" [rows]="5" [showCurrentPageReport]="true"
+            [rowsPerPageOptions]="[5, 10, 15]" [loading]="loading" [paginator]="true"
+            [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']" class="card p-2">
+            <ng-template pTemplate="header">
+                <tr class="h-10 rounded-md p-2 bg-[#fff]">
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            #
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            User
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Ticket No.
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Ticket Price
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Cinemas
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Persons No.
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Purshase count
+                        </div>
+                    </th>
+                    <th>
+                        <div class="flex items-center text-[13.279px] text-[#ABAAB1] font-normal justify-center">
+                            Ticket
+                        </div>
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer let-i="rowIndex">
+                <tr>
+                    <td class="text-center text-[13.279px] text-[#898995] font-normal">
+                        {{ i + 1 }}
+                    </td>
+                    <td class="flex gap-2 items-center justify-center">
+                        <img [alt]="customer.representative.name"
+                            src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}"
+                            width="30" />
+                        <div class="flex flex-col items-center justify-center">
+                            <span class="text-xs text-textColor font-normal">{{ customer.name }}</span>
+                            <span class="text-[10px] text-[#92A1AD] font-poppins font-normal">01111111111</span>
+                        </div>
+                    </td>
+                    <td class="text-[13.279px] text-textColor font-normal">
+                        {{ 40 | currency: 'USD' }}
+                    </td>
+                    <td class="text-[13.279px] text-textColor font-normal">
+                        {{ customer.representative.name }}
+                    </td>
+                    <td class="text-[13.279px] text-textColor font-normal">
+                        Cairo festival, Arab Mall, Sphinx
+                    </td>
+                    <td class="text-[13.279px] text-textColor font-normal">
+                        {{ customer.balance | currency: 'USD':'symbol' }}
+                    </td>
+                    <td class="text-[13.279px] text-textColor font-normal">
+                        {{ customer.balance | currency: 'USD':'symbol' }}
+                    </td>
+                    <td class="text-center">
+
+                    </td>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="emptymessage">
+                <tr>
+                    <td colspan="7">No customers found.</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>
