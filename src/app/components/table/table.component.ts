@@ -12,6 +12,8 @@ export class TableComponent implements OnInit {
   representatives!: any[]
 
   loading: boolean = false
+  value: string | undefined
+  isChecked: boolean = false
 
   ngOnInit() {
     this.customers = [

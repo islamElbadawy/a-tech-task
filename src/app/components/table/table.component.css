@@ -2,3 +2,72 @@
   padding: 0.5rem; /* Use the desired padding value instead of p-2 */
   background-color: white;
 }
+
+::ng-deep .p-paginator {
+  justify-content: start;
+}
+::ng-deep .p-paginator-current {
+  order: 10;
+  margin-inline-start: auto;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 18px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 34px;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 18px;
+  width: 18px;
+  left: 1px;
+  bottom: 1px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  @apply bg-mainColor;
+}
+
+input:focus + .slider {
+  @apply shadow-sm shadow-mainColor;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(12px);
+  -ms-transform: translateX(12px);
+  transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

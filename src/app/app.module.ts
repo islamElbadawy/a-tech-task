@@ -18,6 +18,8 @@ import { DropdownModule } from 'primeng/dropdown'
 import { TagModule } from 'primeng/tag'
 import { SliderModule } from 'primeng/slider'
 import { ProgressBarModule } from 'primeng/progressbar'
+import { InputTextModule } from 'primeng/inputtext'
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [AppComponent, CardComponent, TableComponent, ChartComponent],
@@ -35,6 +37,8 @@ import { ProgressBarModule } from 'primeng/progressbar'
     TagModule,
     SliderModule,
     ProgressBarModule,
+    InputTextModule,
+    FormsModule,
   ],
   providers: [MessageService],
   bootstrap: [AppComponent],
